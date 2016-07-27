@@ -1,0 +1,26 @@
+.sidebar-is-minimized {
+  .view-wrapper {
+    margin-left: 0;
+    transition: all 0.3s ease;
+  }
+  .navbar {
+    left: -60px;
+    transition: all 0.3s ease;
+  }
+  .navbar__position-expander {
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .navbar__expander {
+    width: 36px;
+    height: 36px;
+    transform: rotate(180deg);
+    &:hover {
+      transform: scale(1.1) rotate(180deg);
+    }
+    &:after {
+      transform: translateX(-50%) translateY(-50%);
+
+    }
+  }
+}

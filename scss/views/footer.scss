@@ -1,0 +1,13 @@
+.footer {
+  color: $brand-tertiary;
+  height: 140px;
+  background: $ui-dark;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  &__copyright {
+    margin-right: 24px;
+  }
+}

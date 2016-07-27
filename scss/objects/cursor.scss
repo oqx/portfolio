@@ -1,0 +1,14 @@
+.cursor {
+  &:after {
+    content: '|';
+    animation: 0.8s infinite flicker;
+  }
+}
+@keyframes flicker {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,149 @@
+.flex--vert-center {
+  align-items: center;
+}
+
+.margin {
+  &-left {
+    &--sm {
+      margin-left: 12px;
+    }
+    &--md {
+      margin-left: 24px;
+    }
+    &--lg {
+      margin-left: 48px;
+    }
+  }
+  &-right {
+    &--sm {
+      margin-right: 12px;
+    }
+    &--md {
+      margin-right: 24px;
+    }
+    &--lg {
+      margin-right: 48px;
+    }
+  }
+  &-top {
+    &--sm {
+      margin-top: 12px;
+    }
+    &--md {
+      margin-top: 24px;
+    }
+    &--lg {
+      margin-top: 48px;
+    }
+  }
+  &-bottom {
+    &--sm {
+      margin-bottom: 12px;
+    }
+    &--md {
+      margin-bottom: 24px;
+    }
+    &--lg {
+      margin-bottom: 48px;
+    }
+  }
+}
+.padding {
+  &-vertical {
+    &--sm {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    &--md {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    &--lg {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
+  &-horizontal {
+    &--sm {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    &--md {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    &--lg {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+  &-left {
+    &--sm {
+      padding-left: 12px;
+    }
+    &--md {
+      padding-left: 24px;
+    }
+    &--lg {
+      padding-left: 48px;
+    }
+  }
+  &-right {
+    &--sm {
+      padding-right: 12px;
+    }
+    &--md {
+      padding-right: 24px;
+    }
+    &--lg {
+      padding-right: 48px;
+    }
+  }
+  &-top {
+    &--sm {
+      padding-top: 12px;
+    }
+    &--md {
+      padding-top: 24px;
+    }
+    &--lg {
+      padding-top: 48px;
+    }
+  }
+  &-bottom {
+    &--sm {
+      padding-bottom: 12px;
+    }
+    &--md {
+      padding-bottom: 24px;
+    }
+    &--lg {
+      padding-bottom: 48px;
+    }
+  }
+}
+.hide-up {
+  &--sm {
+    @media (min-width: 480px) {
+      display: none !important;
+    }
+  }
+  &--md {
+    @media (min-width: 768px) {
+      display: none !important;
+    }
+  }
+}
+
+.hide-down {
+  &--sm {
+    @media (max-width: 480px) {
+      display: none !important;
+    }
+  }
+  &--md {
+    @media (max-width: 768px) {
+      display: none !important;
+    }
+  }
+}

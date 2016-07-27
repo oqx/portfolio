@@ -1,0 +1,50 @@
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: $ui-dark;
+  &:visited {
+    color: $ui-dark;
+  }
+  &:hover, &:focus {
+    color: $brand-primary;
+  }
+}
+
+a.link {
+  color: $brand-primary;
+  &:visited {
+    color: $brand-primary;
+  }
+  &:hover, &:focus {
+    color: $brand-secondary;
+  }
+
+  &--alt {
+    position: relative;
+    &:after {
+      background-color: $brand-primary;
+      bottom: -3px;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      &:after {
+        bottom: -5px;
+      }
+    }
+  }
+
+  &--dark {
+    color: $brand-tertiary;
+    &:visited {
+      color: $brand-tertiary;
+    }
+    &:hover, &:focus {
+      color: $brand-secondary;
+    }
+  }
+}

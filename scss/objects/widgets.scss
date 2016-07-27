@@ -1,0 +1,40 @@
+//sailboat
+%sailboat {
+  content:'';
+  width:0;
+  height:0;
+  border-left:80px solid transparent;
+  position:absolute;
+}
+
+.sail-boat {
+  display:inline-block;
+  width:0;
+  height:0;
+  border-bottom: 50px solid #fff;
+  border-left:80px solid transparent;
+  border-right:20px solid transparent;
+  transform:rotate(122deg);
+  position:relative;
+  opacity:1;
+  margin-bottom:40px;
+//bottom - shadow
+  &:before {
+    @extend %sailboat;
+    border-bottom: 40px solid #fff;
+    border-right:80px solid transparent;
+    transform: rotate(-123deg);
+    bottom:-5px;
+    left:-55px;
+    opacity:.3;
+  }
+//right sail.
+  &:after {
+    @extend %sailboat;
+    border-bottom: 50px solid #fff;
+    border-right:80px solid transparent;
+    transform: rotate(-244deg);
+    bottom:-13px;
+    left:-103px;
+  }
+}

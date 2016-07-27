@@ -1,0 +1,18 @@
+<div class="terminal" ng-controller="TerminalCtrl" ng-click="focusInput()">
+  <div class="terminal__bar">
+      <div class="bar__decor">
+        <div class="bar__circle bar__circle--red"></div>
+        <div class="bar__circle bar__circle--yellow"></div>
+        <div class="bar__circle bar__circle--green"></div>
+      </div>
+  </div>
+  <div class="terminal__wrap">
+    <p class="terminal__headline">type "help" for a list of commands, or "clear" to clean terminal.</p>
+    <div class="output"></div>
+    <form ng-submit="shellAccess(shell)" class="terminal__form padding-bottom--lg">
+      <i class="terminal__cursor ion-arrow-right-a"></i>
+      <input type="text" ng-model="shell" class="terminal__input" id="terminal-input"></input>
+      <input type="submit" style="position:absolute; left: -1200px; visibility:hidden"></input>
+    </form>
+  </div>
+</div>

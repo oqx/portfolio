@@ -1,0 +1,28 @@
+<div class="home">
+
+  <input type="radio" name="home" id="leadpages-desc" class="home__radio" checked></input>
+  <label for="leadpages-desc" id="leadpages-card" class="card">
+    <leadpages></leadpages>
+  </label>
+
+  <input type="radio" name="home" id="center-desc" class="home__radio"></input>
+  <label for="center-desc" id="center-card" class="card card--dark">
+    <center></center>
+  </label>
+
+  <input type="radio" name="home" id="jay-desc" class="home__radio"></input>
+  <label for="jay-desc" id="jay-card" class="card card--light">
+    <div class="sticker sticker--fill sticker--xlg">
+        <div class="sticker__obj">
+          <profile height="60px"></profile>
+        </div>
+    </div>
+  </label>
+
+  <div ng-include="'views/leadpages.html'" id="leadpages-blurb"></div>
+
+  <div ng-include="'views/center.html'" id="center-blurb"></div>
+
+  <div ng-include="'views/profile.html'" id="jay-blurb"></div>
+
+</div>
