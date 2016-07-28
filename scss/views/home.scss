@@ -54,9 +54,18 @@
       }
     }
   }
+  &__quote-block {
+    flex-direction: column;
+    align-items: center;
+  }
   &__quote {
+    max-width: 350px;
+  }
+  &__quote-attr {
     font-style: italic;
     text-align: center;
+    padding-bottom: 24px;
+
   }
   &__list {
     font-size: 16px;

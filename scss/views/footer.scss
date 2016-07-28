@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
 
   &__copyright {
-    margin-right: 24px;
+
   }
 }
