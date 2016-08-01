@@ -74,6 +74,12 @@ table {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
 
+.sidebar-is-draggable ng-view {
+  padding: 0; }
+
+.sidebar-is-draggable .terminal {
+  height: 400px; }
+
 [class*="grid"] {
   box-sizing: border-box;
   display: -webkit-box;

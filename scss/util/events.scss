@@ -24,3 +24,12 @@
     }
   }
 }
+
+.sidebar-is-draggable {
+  ng-view {
+    padding: 0;
+  }
+  .terminal {
+    height: 400px;
+  }
+}
